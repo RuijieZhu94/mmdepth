@@ -55,7 +55,7 @@ Also, we appreciate all contributions to improve MMDepth framework.
 <table style="border-collapse: collapse; border: none;">
 <tr style="border: none;">
     <td style="align-items:center; width: 25%; border: none;">
-      <img src="assets/2024-arxiv-ScaleDepth.jpg" style=" vertical-align:middle"/>
+      <img src="assets/scaledepth_teaser.jpg" style=" vertical-align:middle"/>
     </td>
     <td style="align-items:center; border: none;">
       <a href="https://ruijiezhu94.github.io/ScaleDepth">ScaleDepth: Decomposing Metric Depth Estimation into Scale Prediction and Relative Depth Estimation</a>
