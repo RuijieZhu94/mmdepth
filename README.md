@@ -110,18 +110,19 @@ Results and models are available in the [model zoo](docs/model_zoo.md).
         <ul>
         <li><a href="mmdepth/models/backbones/resnet.py">ResNet(CVPR'2016)</a></li>
         <li><a href="mmdepth/models/backbones/resnext.py">ResNeXt (CVPR'2017)</a></li>
-        <li><a href="configs/hrnet">HRNet (CVPR'2019)</a></li>
-        <li><a href="configs/resnest">ResNeSt (ArXiv'2020)</a></li>
-        <li><a href="configs/mobilenet_v2">MobileNetV2 (CVPR'2018)</a></li>
-        <li><a href="configs/mobilenet_v3">MobileNetV3 (ICCV'2019)</a></li>
-        <li><a href="configs/vit">Vision Transformer (ICLR'2021)</a></li>
-        <li><a href="configs/swin">Swin Transformer (ICCV'2021)</a></li>
-        <li><a href="configs/twins">Twins (NeurIPS'2021)</a></li>
-        <li><a href="configs/beit">BEiT (ICLR'2022)</a></li>
-        <li><a href="configs/convnext">ConvNeXt (CVPR'2022)</a></li>
-        <li><a href="configs/mae">MAE (CVPR'2022)</a></li>
-        <li><a href="configs/poolformer">PoolFormer (CVPR'2022)</a></li>
-        <li><a href="configs/segnext">SegNeXt (NeurIPS'2022)</a></li>
+        <li><a href="mmdepth/models/backbones/hrnet.py">HRNet (CVPR'2019)</a></li>
+        <li><a href="mmdepth/models/backbones/resnest.py">ResNeSt (ArXiv'2020)</a></li>
+        <li><a href="mmdepth/models/backbones/mobilenet_v2.py">MobileNetV2 (CVPR'2018)</a></li>
+        <li><a href="mmdepth/models/backbones/mobilenet_v3.py">MobileNetV3 (ICCV'2019)</a></li>
+        <li><a href="mmdepth/models/backbones/vit.py">Vision Transformer (ICLR'2021)</a></li>
+        <li><a href="mmdepth/models/backbones/swin.py">Swin Transformer (ICCV'2021)</a></li>
+        <li><a href="mmdepth/models/backbones/twins.py">Twins (NeurIPS'2021)</a></li>
+        <li><a href="mmdepth/models/backbones/beit.py">BEiT (ICLR'2022)</a></li>
+        <li><a href="mmdepth/models/backbones/convnext.py">ConvNeXt (CVPR'2022)</a></li>
+        <li><a href="mmdepth/models/backbones/mae.py">MAE (CVPR'2022)</a></li>
+        <li><a href="mmdepth/models/backbones/poolformer.py">PoolFormer (CVPR'2022)</a></li>
+        <li><a href="mmdepth/models/backbones/segnext.py">SegNeXt (NeurIPS'2022)</a></li>
+        <li><a href="projects/ScaleDepth/backbone/clip.py">CLIP (ICML'2021)</a></li>
         </ul>
       </td>      
       <td>
@@ -162,6 +163,7 @@ Results and models are available in the [model zoo](docs/model_zoo.md).
           <li><a href="mmdepth/models/decode_heads/stdc_head.py">STDC_Head</li>
           <li><a href="mmdepth/models/decode_heads/uper_head.py">Uper_Head</li>
           <li><a href="mmdepth/models/decode_heads/vpd_depth_head.py">VPDDepth_Head</li>
+          <li><a href="projects/ScaleDepth/decode_head/scaledepth_head.py">ScaleDepth_Head</li>
         </ul>
       </td>
       <td>
