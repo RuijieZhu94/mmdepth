@@ -11,9 +11,7 @@ from .basesegdataset import BaseSegDataset
 @DATASETS.register_module()
 class NYUDataset(BaseSegDataset):
     """NYU depth estimation dataset. The file structure should be.
-
     .. code-block:: none
-
         ├── data
         │   ├── nyu
         │   │   ├── images

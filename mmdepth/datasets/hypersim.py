@@ -10,24 +10,25 @@ from mmengine.logging import print_log
 
 @DATASETS.register_module()
 class HyperSimDataset(BaseSegDataset):
-    """DIODE dataset for depth estimation. An example of file structure
+    """HyperSim dataset for depth estimation. An example of file structure
     is as followed.
     .. code-block:: none
         ├── data
-        │   ├── KITTI
-        │   │   ├── kitti_eigen_train.txt
-        │   │   ├── kitti_eigen_test.txt
-        │   │   ├── input (RGB, img_dir)
-        │   │   │   ├── date_1
-        │   │   │   ├── date_2
+        │   ├── hypersim
+        │   │   ├── ai_001_001
+        │   │   │   ├── _detail
+        │   │   │   ├── images
         │   │   │   |   ...
         │   │   │   |   ...
-        |   │   ├── gt_depth (ann_dir)
-        │   │   │   ├── date_drive_number_sync
+        │   │   ├── ai_001_001
+        │   │   ├── ...
+        |   │   ├── ai_055_010
+        |   │   ├── hypersim_list.txt
+
     split file format:
-    input_image: 2011_09_26/2011_09_26_drive_0002_sync/image_02/data/0000000069.png 
-    gt_depth:    2011_09_26_drive_0002_sync/proj_depth/groundtruth/image_02/0000000069.png 
-    focal:       721.5377 (following the focal setting in BTS, but actually we do not use it)
+    input_image: ai_001_010/images/scene_cam_00_final_preview/frame.0000.tonemap.jpg 
+    gt_depth:    masked_depth/data_hypersim_ai_001_010_images_scene_cam_00_geometry_png_frame.0000.depth_meters.png
+
     Args:
         pipeline (list[dict]): Processing pipeline
         img_dir (str): Path to image directory
@@ -41,13 +42,7 @@ class HyperSimDataset(BaseSegDataset):
         min_depth=1e-3: Default min depth value.
         max_depth=80: Default max depth value.
     """
-    METAINFO = dict(classes=('printer_room', 'bathroom', 'living_room', 'study',
-                 'conference_room', 'study_room', 'kitchen', 'home_office',
-                 'bedroom', 'dinette', 'playroom', 'indoor_balcony',
-                 'laundry_room', 'basement', 'excercise_room', 'foyer',
-                 'home_storage', 'cafe', 'furniture_store', 'office_kitchen',
-                 'student_lounge', 'dining_room', 'reception_room',
-                 'computer_lab', 'classroom', 'office', 'bookstore','outdoor_scene'))
+    METAINFO = dict()
 
     def __init__(self,
                  data_prefix=dict(
@@ -64,42 +59,6 @@ class HyperSimDataset(BaseSegDataset):
             seg_map_suffix=depth_map_suffix,
             data_root=data_root,
             **kwargs)
-
-                #  pipeline,
-                #  img_dir,
-                #  ann_dir=None,
-                #  split=None,
-                #  data_root=None,
-                #  test_mode=False,
-                #  depth_scale=256,
-                #  garg_crop=True,
-                #  eigen_crop=False,
-                #  min_depth=1e-3,
-                #  max_depth=80):
-
-        # self.pipeline = Compose(pipeline)
-        # self.img_dir = data_prefix['img_path']
-        # self.ann_dir = data_prefix['depth_map_path']
-
-        # self.data_root = data_root
-
-        # self.depth_scale = depth_scale
-        # self.garg_crop = garg_crop
-        # self.eigen_crop = eigen_crop
-        # self.min_depth = min_depth # just for evaluate. (crop gt to certain range)
-        # self.max_depth = max_depth # just for evaluate.
-
-        # join paths if data_root is specified
-        # if self.data_root is not None:
-        #     if not (self.img_dir is None or osp.isabs(self.img_dir)):
-        #         self.img_dir = osp.join(self.data_root, self.img_dir)
-        #     if not (self.ann_dir is None or osp.isabs(self.ann_dir)):
-        #         self.ann_dir = osp.join(self.data_root, self.ann_dir)
-        #     if not (self.split is None or osp.isabs(self.split)):
-        #         self.split = osp.join(self.data_root, self.split)
-
-        # load annotations
-        # self.img_infos = self.load_annotations(self.img_dir, self.ann_dir, self.split)
         
     def load_data_list(self) -> List[dict]:
         """Load annotation from directory.
