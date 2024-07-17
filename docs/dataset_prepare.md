@@ -4,103 +4,17 @@ It is recommended to symlink the dataset root to `$mmdepth/data`.
 If your folder structure is different, you may need to change the corresponding paths in config files.
 
 ```none
-HABins
-├── depth
-├── tools
-├── configs
-├── splits
+mmdepth
 ├── data
-│   ├── kitti
-│   │   ├── input
-│   │   │   ├── 2011_09_26
-│   │   │   ├── 2011_09_28
-│   │   │   ├── ...
-│   │   │   ├── 2011_10_03
-│   │   ├── gt_depth
-│   │   │   ├── 2011_09_26_drive_0001_sync
-│   │   │   ├── 2011_09_26_drive_0002_sync
-│   │   │   ├── ...
-│   │   │   ├── 2011_10_03_drive_0047_sync
-|   |   ├── benchmark_test
-│   │   │   ├── 0000000000.png
-│   │   │   ├── 0000000001.png
-│   │   │   ├── ...
-│   │   │   ├── 0000000499.png
-|   |   ├── benchmark_cam
-│   │   │   ├── 0000000000.txt
-│   │   │   ├── 0000000001.txt
-│   │   │   ├── ...
-│   │   │   ├── 0000000499.txt
-│   │   ├── split_file.txt
-│   ├── nyu
-│   │   ├── basement_0001a
-│   │   ├── basement_0001b
-│   │   ├── ... (all scene names)
-│   │   ├── split_file.txt
-│   ├── SUNRGBD
-│   │   ├── SUNRGBD
-│   │   │   ├── kv1
-│   │   │   ├── kv2
-│   │   │   ├── realsense
-│   │   │   ├── xtion
-│   │   ├── split_file.txt
-│   ├── cityscapes
-│   │   ├── camera
-│   │   │   ├── test
-│   │   │   ├── train
-│   │   │   ├── val
-│   │   ├── disparity_trainvaltest
-│   │   │   ├── disparity
-│   │   ├── leftImg8bit_trainvaltest
-│   │   │   ├── leftImg8bit
-│   │   ├── split_file.txt
-│   ├── cityscapesExtra
-│   │   ├── camera
-│   │   │   ├── train_extra
-│   │   ├── disparity
-│   │   │   ├── train_extra
-│   │   ├── leftImg8bit
-│   │   │   ├── train_extra
-│   │   ├── split_file.txt
-│   ├── rabbitai
-|   |   ├── gt_depth
-|   |   │   ├── train
-|   |   │   ├── val
-|   |   │   ├── test
-│   │   ├── input
-|   |   │   ├── train
-|   |   │   ├── val
-|   |   │   ├── test
-│   │   ├── split_file.txt
-│   ├── viper
-|   |   ├── gt_depth
-|   |   │   ├── train
-|   |   │   ├── val
-|   |   │   ├── test
-│   │   ├── input
-|   |   │   ├── train
-|   |   │   ├── val
-|   |   │   ├── test
-│   │   ├── split_file.txt
-│   ├── custom_dataset
-│   │   ├── train
-│   │   │   ├── rgb
-│   │   │   │   ├── 0.xxx
-│   │   │   │   ├── 1.xxx
-│   │   │   │   ├── 2.xxx
-│   │   │   ├── depth
-│   │   │   │   ├── 0.xxx
-│   │   │   │   ├── 1.xxx
-│   │   │   │   ├── 2.xxx
-│   │   ├── val
-│   │   │   ├── rgb
-│   │   │   │   ├── 0.xxx
-│   │   │   │   ├── 1.xxx
-│   │   │   │   ├── 2.xxx
-│   │   │   ├── depth
-│   │   │   │   ├── 0.xxx
-│   │   │   │   ├── 1.xxx
-│   │   │   │   ├── 2.xxx
+│   ├── ddad 
+│   ├── diml 
+│   ├── DIODE 
+│   ├── hypersim 
+│   ├── ibims
+│   ├── kitti 
+│   ├── nyu 
+│   ├── sunrgbd
+│   └── vkitti2.0 
 ```
 
 ### **KITTI**
@@ -113,7 +27,7 @@ Finally, copy split files (whose names are started with *kitti*) in splits folde
 
 Some methods may use the camera intrinsic parameters (*i.e.,* BTS), you need to download the [benchmark_cam](https://drive.google.com/file/d/1ktSDTUx9dDViBKoAeqTERTay1813xfUK/view?usp=sharing) consisting of camera intrinsic parameters of the benchmark test set.
 
-### **NYU**
+### **NYU-Depth V2**
 
 Following previous work, I utilize about 50K image-depth pairs as our training set and standard 652 images as the validation set. You can download the subset with the help of codes provided in [BTS](https://github.com/cleinc/bts/tree/master/pytorch).
 
@@ -131,26 +45,27 @@ Finally, copy nyu_train.txt and nyu_test.txt in the splits folder into the data/
 
 ### **SUNRGBD**
 
-The dataset could be download from this [link](https://rgbd.cs.princeton.edu/). Copy SUNRGBD_val_splits.txt in splits into data/SUNRGBD.
+The dataset can be download from this [link](https://rgbd.cs.princeton.edu/). 
 
-### **Cityscapes and CityscapesExtra**
+## **Ibim-1 benchmark**
 
-The data could be found [here](https://www.cityscapes-dataset.com/downloads/) after registration. Copy cityscapes_train.txt and cityscapes_train in splits to data/cityscapes. If using extra data, copy cityscapes_train_extra.txt to data/cityscapesExtra.
+The dataset can be download from this [link](https://www.asg.ed.tum.de/lmf/ibims1/). 
 
-### **RabbitAI**
+## **DIODE**
 
-The website could be found [here](https://rabbitai.de/benchmark/).
-Unfortunately, the dataset is unavailable now. you need to contact them if you are still interested in the data.
+The dataset can be download from this [link](https://diode-dataset.org/). 
 
-### **VIPER**
+## **Hypersim**
 
-The dataset could be found [here](https://playing-for-benchmarks.org/download/).
-Since the depth GT is unavailable, we use DPT to preprocess the dataset.
+The dataset can be download from this [link](https://github.com/apple/ml-hypersim). 
 
-### **MPI Sintel**
+## **VKITTI2.0**
 
-The dataset could be found [here](http://sintel.is.tue.mpg.de/).
-Please sign up to download the dataset.
+The dataset can be download from this [link](https://europe.naverlabs.com/research/computer-vision/proxy-virtual-worlds-vkitti-2/). 
+
+## DIML
+
+The dataset can be download from this [link](https://dimlrgbd.github.io/rawdata). 
 
 ### **Custom Dataset**
 
