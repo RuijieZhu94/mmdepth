@@ -58,7 +58,7 @@ Also, we appreciate all contributions to improve MMDepth framework.
       <img src="assets/scaledepth.jpg" style=" vertical-align:middle"/>
     </td>
     <td style="align-items:center; border: none;">
-      <a href="https://ruijiezhu94.github.io/ScaleDepth">ScaleDepth: Decomposing Metric Depth Estimation into Scale Prediction and Relative Depth Estimation</a>
+      <a href="https://github.com/RuijieZhu94/mmdepth/tree/main/projects/ScaleDepth">ScaleDepth: Decomposing Metric Depth Estimation into Scale Prediction and Relative Depth Estimation</a>
       <br>Ruijie Zhu, Chuxin Wang, Ziyang Song, Li Liu, Tianzhu Zhang, Yongdong Zhang
       <br> Arxiv, 2024
       <br> 

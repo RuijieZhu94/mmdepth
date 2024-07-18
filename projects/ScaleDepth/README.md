@@ -63,8 +63,26 @@ pip install -r requirements/albu.txt
 
 We provide [train.md](docs/train.md) and [inference.md](docs/inference.md) for the instruction of training and inference. 
 
+### Train
+```shell
+# ScaleDepth-N
+bash tools/dist_train.sh projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_NYU_480x480.py 4
+# ScaleDepth-K
+bash tools/dist_train.sh projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_KITTI_352x1120.py 4
+# ScaleDepth-NK
+bash tools/dist_train.sh projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_NYU_KITTI_352x512.py 4
+```
 
-projects/ScaleDepth/pretrained_weights/nyu_kitti_class_embeddings_convnext_large_d_320.pth
+### Test
+```shell
+# ScaleDepth-N
+python tools/test.py projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_NYU_480x480.py work_dirs/scaledepth_clip_NYU_KITTI_352x512.py/iter_40000.pth
+# ScaleDepth-K
+python tools/test.py projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_KITTI_352x1120.py work_dirs/scaledepth_clip_NYU_KITTI_352x512.py/iter_40000.pth
+# ScaleDepth-NK
+python tools/test.py projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_NYU_KITTI_352x512.py work_dirs/scaledepth_clip_NYU_KITTI_352x512.py/iter_40000.pth
+```
+
 
 ## Bibtex
 
