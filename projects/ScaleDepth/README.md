@@ -59,6 +59,8 @@ pip install future tensorboard
 pip install -r requirements/albu.txt
 ```
 
+And download the checkpoint of text embeddings from [Google Drive](https://drive.google.com/file/d/1Am2YWjtbWgMP4mwLjS5gmjKmawhrPyBe/view?usp=sharing) and place it to `projects/ScaleDepth/pretrained_weights` folder.
+
 ## Training and Inference
 
 We provide [train.md](docs/train.md) and [inference.md](docs/inference.md) for the instruction of training and inference. 
