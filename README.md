@@ -178,6 +178,7 @@ Results and models are available in the [model zoo](docs/model_zoo.md).
           <li><a href="mmdepth/models/decode_heads/uper_head.py">Uper_Head</li>
           <li><a href="mmdepth/models/decode_heads/vpd_depth_head.py">VPDDepth_Head</li>
           <li><a href="projects/ScaleDepth/decode_head/scaledepth_head.py">ScaleDepth_Head</li>
+          <li><a href="projects/Binsformer/decode_head/binsformer_head.py">BinsFormer_Head</li>
         </ul>
       </td>
       <td>
