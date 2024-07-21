@@ -1,6 +1,6 @@
 _base_ = [
-    '../_base_/models/scaledepth.py', '../_base_/datasets/nyu_480x480.py',
-    '../_base_/default_runtime.py', 
+    '../_base_/models/scaledepth.py', '../../../../configs/_base_/datasets/nyu_480x480.py',
+    '../../../../configs/_base_/default_runtime.py', 
 ]
 custom_imports = dict(
     imports=['projects.ScaleDepth.backbone', 'projects.ScaleDepth.neck', 'projects.ScaleDepth.decode_head'],

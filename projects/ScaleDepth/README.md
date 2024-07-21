@@ -76,11 +76,11 @@ bash tools/dist_train.sh projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_
 ### Test
 ```shell
 # ScaleDepth-N
-python tools/test.py projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_NYU_480x480.py work_dirs/scaledepth_clip_NYU_KITTI_352x512.py/iter_40000.pth
+python tools/test.py projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_NYU_480x480.py work_dirs/scaledepth_clip_NYU_KITTI_352x512/iter_40000.pth
 # ScaleDepth-K
-python tools/test.py projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_KITTI_352x1120.py work_dirs/scaledepth_clip_NYU_KITTI_352x512.py/iter_40000.pth
+python tools/test.py projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_KITTI_352x1120.py work_dirs/scaledepth_clip_NYU_KITTI_352x512/iter_40000.pth
 # ScaleDepth-NK
-python tools/test.py projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_NYU_KITTI_352x512.py work_dirs/scaledepth_clip_NYU_KITTI_352x512.py/iter_40000.pth
+python tools/test.py projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_NYU_KITTI_352x512.py work_dirs/scaledepth_clip_NYU_KITTI_352x512/iter_40000.pth
 ```
 
 
