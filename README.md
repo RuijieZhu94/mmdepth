@@ -48,12 +48,12 @@ For detailed guides for development, please see [tutorials](https://github.com/o
 
 ## Projects
 
-[Here](projects/README.md) are some implementations of SOTA models and solutions built on MMDepth, which are supported and maintained by community users. These projects demonstrate the best practices based on MMDepth for research and product development. We welcome and appreciate all the contributions to these projects.
+Here are some implementations of SOTA models and solutions built on MMDepth, which are supported and maintained by community users. These projects demonstrate the best practices based on MMDepth for research and product development. We welcome and appreciate all the contributions to these projects.
 Also, we appreciate all contributions to improve MMDepth framework.
 
 
 <table style="border-collapse: collapse; border: none;">
-<tr style="border: none;">
+  <tr style="border: none;">
     <td style="align-items:center; width: 25%; border: none;">
       <img src="assets/scaledepth.jpg" style=" vertical-align:middle"/>
     </td>
@@ -65,6 +65,20 @@ Also, we appreciate all contributions to improve MMDepth framework.
       <a href="https://arxiv.org/abs/2407.08187">[Paper]</a>
       <a href="https://ruijiezhu94.github.io/ScaleDepth">[Webpage]</a>
       <a href="https://github.com/RuijieZhu94/mmdepth">[Code]</a>
+    </td>
+  </tr>
+
+  <tr style="border: none;">
+    <td style="align-items:center; width: 25%; border: none;">
+      <img src="assets/binsformer.jpg" style=" vertical-align:middle"/>
+    </td>
+    <td style="align-items:center; border: none;">
+      <a href="https://github.com/RuijieZhu94/mmdepth/tree/main/projects/Binsformer">BinsFormer: Revisiting Adaptive Bins for Monocular Depth Estimation</a>
+      <br>Zhenyu Li, Xuyang Wang, Xianming Liu, and Junjun Jiang
+      <br> IEEE Transactions on Image Processing, 2024
+      <br> 
+      <a href="https://arxiv.org/abs/2204.00987">[Paper]</a>
+      <a href="https://github.com/zhyever/Monocular-Depth-Estimation-Toolbox">[Code]</a>
     </td>
   </tr>
 </table>
