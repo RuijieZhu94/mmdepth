@@ -3,7 +3,7 @@ _base_ = [
     '../../../../configs/_base_/default_runtime.py', 
 ]
 custom_imports = dict(
-    imports=['mmpretrain.models', 'projects.ScaleDepth.neck', 'projects.ScaleDepth.decode_head'],
+    imports=['mmpretrain.models', 'projects.ScaleDepth.decode_head'],
     allow_failed_imports=False)
 crop_size = (480, 480)
 data_preprocessor = dict(size=crop_size)

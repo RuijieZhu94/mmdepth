@@ -3,7 +3,7 @@ _base_ = [
     '../../../../configs/_base_/default_runtime.py', 
 ]
 custom_imports = dict(
-    imports=['projects.ScaleDepth.backbone', 'projects.ScaleDepth.neck', 'projects.ScaleDepth.decode_head'],
+    imports=['projects.ScaleDepth.backbone', 'projects.ScaleDepth.decode_head'],
     allow_failed_imports=False)
 crop_size = (352, 512)
 data_preprocessor = dict(
