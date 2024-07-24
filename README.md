@@ -27,11 +27,14 @@ If there is any infringement please contact ruijiezhu@mail.ustc.edu.cn.
 
 Since this is the first version of this repo, there are inevitably many imperfections. The code library inherits most of the functions and advantages of MMSegmentation, and adds or expands some components. We welcome you to develop and maintain this repo together!
 
+![](assets/scaledepth_zeroshot.jpg)
+
 ### Major features
 
 - **Unified Benchmark**
 
   We provide a unified toolbox and benchmark for training or testing models on multiple depth datasets.
+
 
 - **Modular Design**
 
