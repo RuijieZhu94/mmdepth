@@ -1,28 +1,29 @@
 <h3 align="center"><strong>ScaleDepth: Decomposing Metric Depth Estimation into Scale Prediction and Relative Depth Estimation</strong></h3>
 
-  <p align="center">
-    <a href="https://ruijiezhu94.github.io/ruijiezhu/">Ruijie Zhu</a>,
-    <a href="https://chuxwa.github.io/">Chuxin Wang</a>,
-    <a href="https://indu1ge.github.io/ziyangsong">Ziyang Song</a>,
-    <a href="https://github.com/lliu00">Li Liu</a>,
-    <a href="https://github.com/Hevans123">Jianfeng He</a>,<br>
-    <a href="http://staff.ustc.edu.cn/~tzzhang/">Tianzhu Zhang</a>,
-    <a href="https://dblp.org/pid/z/YongdongZhang.html">Yongdong Zhang</a>,
-    <br>
-    University of Science and Technology of China
-    <br>
-    <b>Arxiv 2024</b>
-
+<p align="center">
+  <a href="https://ruijiezhu94.github.io/ruijiezhu/">Ruijie Zhu</a>,
+  <a href="https://chuxwa.github.io/">Chuxin Wang</a>,
+  <a href="https://indu1ge.github.io/ziyangsong">Ziyang Song</a>,
+  <a href="https://github.com/lliu00">Li Liu</a>,
+  <a href="http://staff.ustc.edu.cn/~tzzhang/">Tianzhu Zhang</a>,
+  <a href="https://dblp.org/pid/z/YongdongZhang.html">Yongdong Zhang</a>,
+  <br>
+  University of Science and Technology of China
+  <br>
+  Arxiv 2024
 </p>
 
 <div align="center">
- <a href='https://arxiv.org/abs/2407.08187'><img src='https://img.shields.io/badge/Paper-arXiv-red'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>TL;DR: Finetuning CLIP with 4 RTX 3090 in 8 hours to obtain a robust metric depth estimation model!</b>
+  <br>
+  <br>
+  <a href='https://arxiv.org/abs/2407.08187'><img src='https://img.shields.io/badge/Paper-arXiv-red'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <!-- <a href='https://arxiv.org/abs/[]'><img src='https://img.shields.io/badge/arXiv-[]-b31b1b.svg'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
- <a href='https://ruijiezhu94.github.io/ScaleDepth'><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <a href='https://github.com/RuijieZhu94/ScaleDepth/tree/main?tab=Apache-2.0-1-ov-file'><img src='https://img.shields.io/badge/License-Apache 2.0-blue'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://visitor-badge.laobi.icu/badge?page_id=ruijiezhu94.scaledepth" alt="visitor badge"/>
-
-<br>
+  <a href='https://ruijiezhu94.github.io/ScaleDepth'><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href='https://github.com/RuijieZhu94/ScaleDepth/tree/main?tab=Apache-2.0-1-ov-file'><img src='https://img.shields.io/badge/License-Apache 2.0-blue'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href='https://ruijiezhu94.github.io/ScaleDepth'><img src="https://visitor-badge.laobi.icu/badge?page_id=ruijiezhu94.scaledepth"/></a>
+  <br>
+  <br>
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-diml-outdoor)](https://paperswithcode.com/sota/monocular-depth-estimation-on-diml-outdoor?p=scaledepth-decomposing-metric-depth)
 	
