@@ -105,6 +105,11 @@ python tools/test.py projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_KITT
 python tools/test.py projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_NYU_KITTI_352x512.py work_dirs/scaledepth_clip_NYU_KITTI_352x512/iter_40000.pth
 ```
 
+## Offical weights
+
+| Method | Backbone | Train Iters | Results  | Config | Checkpoint | GPUs |
+| ------ | :------: | :---------: | :----------: | :----: | :--------: | :---:|
+| ScaleDepth-NK | CLIP(ConvNext-Large)   |  40000   |  [log](log/ScaleDepth-NK.md) |  [config](configs/ScaleDepth/scaledepth_clip_NYU_KITTI_352x512.py) | [iter_40000.pth](https://drive.google.com/file/d/1QYS6A5--swzxfwMqjvk9ekF0Ds0GefM1/view?usp=drive_link) | 4 RTX 3090 |
 
 ## Bibtex
 
