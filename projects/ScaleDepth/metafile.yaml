@@ -1,0 +1,56 @@
+Collections:
+- Name: ScaleDepth
+  License: Apache License 2.0
+  Metadata:
+    Training Data:
+    - NYU
+  Paper:
+    Title: 'ScaleDepth: Decomposing Metric Depth Estimation into Scale Prediction and Relative Depth Estimation'
+    URL: https://arxiv.org/abs/2407.08187
+  README: projects/ScaleDepth/README.md
+  Frameworks:
+  - PyTorch
+Models:
+- Name: scaledepth_clip_NYU_KITTI_352x512
+  In Collection: ScaleDepth
+  Results:
+    Task: Depth Estimation
+    Dataset: NYU
+    Metrics:
+      RMSE: 0.253
+  Config: projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_NYU_KITTI_352x512.py
+  Metadata:
+    Training Data: NYU
+    Batch Size: 32
+    Architecture:
+    - CLIP
+    Training Resources: 4x RTX3090 GPUS
+  Weights: work_dirs/scaledepth_clip_NYU_KITTI_352x512/iter_40000.pth
+  Training log: log
+  Paper:
+    Title: 'ScaleDepth: Decomposing Metric Depth Estimation into Scale Prediction and Relative Depth Estimation'
+    URL: https://arxiv.org/abs/2407.08187
+  Code: https://github.com/RuijieZhu94/mmdepth/tree/main/projects/ScaleDepth
+  Framework: PyTorch
+- Name: scaledepth_clip_NYU_KITTI_352x512
+  In Collection: ScaleDepth
+  Alias: scaledepth
+  Results:
+    Task: Depth Estimation
+    Dataset: NYU
+    Metrics:
+      RMSE: 0.267
+  Config: projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_NYU_KITTI_352x512.py
+  Metadata:
+    Training Data: NYU
+    Batch Size: 24
+    Architecture:
+    - CLIP
+    Training Resources: 4x RTX3090 GPUS
+  Weights: work_dirs/scaledepth_clip_NYU_KITTI_352x512/iter_40000.pth
+  Training log: log
+  Paper:
+    Title: 'ScaleDepth: Decomposing Metric Depth Estimation into Scale Prediction and Relative Depth Estimation'
+    URL: https://arxiv.org/abs/2407.08187
+  Code: https://github.com/RuijieZhu94/mmdepth/tree/main/projects/ScaleDepth
+  Framework: PyTorch

@@ -130,11 +130,11 @@ train_dataloader = dict(
         type='ConcatDataset',
         datasets=[dataset_nyu_train, dataset_kitti_train]))
 
-val_dataloader = kitti_val_dataloader
-# val_dataloader = nyu_val_dataloader
+# val_dataloader = kitti_val_dataloader
+val_dataloader = nyu_val_dataloader
 test_dataloader = val_dataloader
 
-val_evaluator = kitti_val_evaluator
-# val_evaluator = nyu_val_evaluator
+# val_evaluator = kitti_val_evaluator
+val_evaluator = nyu_val_evaluator
 test_evaluator = val_evaluator
 

@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from mmcv.cnn import ConvModule
 from mmdepth.registry import MODELS
-from ..utils import FeatureExtractor
+# from ..utils import FeatureExtractor
 # from mmengine.model import BaseModule
 from mmengine.runner import CheckpointLoader, load_checkpoint
 
