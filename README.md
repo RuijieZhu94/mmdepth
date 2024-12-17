@@ -220,6 +220,23 @@ If you find this project useful in your research, please consider cite:
 }
 ```
 
+And if you find those SOTA models and solutions built on MMDepth useful, please also consider cite:
+```bibtex
+@article{zhu2024scaledepth,
+  title={ScaleDepth: Decomposing Metric Depth Estimation into Scale Prediction and Relative Depth Estimation}, 
+  author={Zhu, Ruijie and Wang, Chuxin and Song, Ziyang and Liu, Li and Zhang, Tianzhu and Zhang, Yongdong},
+  journal={arXiv preprint arXiv:2407.08187},
+  year={2024}
+}
+```
+```bibtex
+@article{li2022binsformer,
+  title={BinsFormer: Revisiting Adaptive Bins for Monocular Depth Estimation},
+  author={Li, Zhenyu and Wang, Xuyang and Liu, Xianming and Jiang, Junjun},
+  journal={arXiv preprint arXiv:2204.00987},
+  year={2022}
+}
+```
 ## License
 
 This project is released under the [Apache 2.0 license](LICENSE).
