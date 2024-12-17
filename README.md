@@ -8,8 +8,8 @@
 
 [![docs](https://img.shields.io/badge/docs-latest-blue)](https://github.com/RuijieZhu94/mmdepth/docs)
 [![license](https://img.shields.io/github/license/RuijieZhu94/mmdepth.svg)](https://github.com/RuijieZhu94/mmdepth/blob/main/LICENSE)
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/RuijieZhu94/mmdepth.svg)](http://isitmaintained.com/project/RuijieZhu94/mmdepth "Average time to resolve an issue")
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/RuijieZhu94/mmdepth.svg)](http://isitmaintained.com/project/RuijieZhu94/mmdepth "Percentage of issues still open")
+[![issue resolution](https://isitmaintained.com/badge/resolution/RuijieZhu94/mmdepth.svg)](https://github.com/RuijieZhu94/mmdepth/issues)
+[![open issues](https://isitmaintained.com/badge/open/RuijieZhu94/mmdepth.svg)](https://github.com/RuijieZhu94/mmdepth/issues)
  ![visitors](https://visitor-badge.laobi.icu/badge?page_id=ruijiezhu94.mmdepth)
 </div>
 
