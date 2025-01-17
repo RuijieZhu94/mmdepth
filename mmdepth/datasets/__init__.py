@@ -25,6 +25,7 @@ from .ibims import IbimsDataset
 from .diode import DIODEDataset
 from .diml import DIMLDataset
 from .hypersim import HyperSimDataset
+from .nyu_normal import NYU_Nor_Dataset
 
 # yapf: enable
 __all__ = [
