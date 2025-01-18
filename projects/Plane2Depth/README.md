@@ -1,8 +1,8 @@
 <h3 align="center"><strong>Plane2Depth: Hierarchical Adaptive Plane Guidance for Monocular Depth Estimation</strong></h3>
 
 <p align="center">
-  <a href="https://github.com/lliu00">Li Liu</a>,
-  <a href="https://ruijiezhu94.github.io/ruijiezhu/">Ruijie Zhu</a>,
+  <a href="https://github.com/lliu00">Li Liu*</a>,
+  <a href="https://ruijiezhu94.github.io/ruijiezhu/">Ruijie Zhu*</a>,
   <a href="https://github.com/JiachengDeng">Jiacheng Deng</a>,
   <a href="https://indu1ge.github.io/ziyangsong">Ziyang Song</a>,
   <a href="https://auto.ustc.edu.cn/2022/0711/c25977a562259/page.htm">Wenfei Yang</a>,
@@ -14,18 +14,18 @@
 </p>
 
 <div align="center">
-  <b>TL;DR: Finetuning CLIP with 4 RTX 3090 in 8 hours to obtain a robust metric depth estimation model!</b>
+  <!-- <b>TL;DR: Finetuning CLIP with 4 RTX 3090 in 8 hours to obtain a robust metric depth estimation model!</b> -->
   <br>
   <br>
-  <a href='https://arxiv.org/abs/2407.08187'><img src='https://img.shields.io/badge/Paper-arXiv-red'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href='https://arxiv.org/abs/2409.02494'><img src='https://img.shields.io/badge/Paper-arXiv-red'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <!-- <a href='https://arxiv.org/abs/[]'><img src='https://img.shields.io/badge/arXiv-[]-b31b1b.svg'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-  <a href='https://ruijiezhu94.github.io/ScaleDepth'><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href='https://github.com/RuijieZhu94/ScaleDepth/tree/main?tab=Apache-2.0-1-ov-file'><img src='https://img.shields.io/badge/License-Apache 2.0-blue'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href='https://ruijiezhu94.github.io/ScaleDepth'><img src="https://visitor-badge.laobi.icu/badge?page_id=ruijiezhu94.scaledepth"/></a>
+  <a href='https://ruijiezhu94.github.io/plane2depth_page'><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <!-- <a href='https://github.com/RuijieZhu94/ScaleDepth/tree/main?tab=Apache-2.0-1-ov-file'><img src='https://img.shields.io/badge/License-Apache 2.0-blue'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+  <a href='https://ruijiezhu94.github.io/plane2depth_page'><img src="https://visitor-badge.laobi.icu/badge?page_id=ruijiezhu94.plane2depth_page"/></a>
   <br>
   <br>
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-diml-outdoor)](https://paperswithcode.com/sota/monocular-depth-estimation-on-diml-outdoor?p=scaledepth-decomposing-metric-depth)
+<!-- [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-diml-outdoor)](https://paperswithcode.com/sota/monocular-depth-estimation-on-diml-outdoor?p=scaledepth-decomposing-metric-depth)
 	
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-diode-indoor)](https://paperswithcode.com/sota/monocular-depth-estimation-on-diode-indoor?p=scaledepth-decomposing-metric-depth)
 	
@@ -43,7 +43,7 @@
 	
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-kitti-eigen)](https://paperswithcode.com/sota/monocular-depth-estimation-on-kitti-eigen?p=scaledepth-decomposing-metric-depth)
 	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-nyu-depth-v2)](https://paperswithcode.com/sota/monocular-depth-estimation-on-nyu-depth-v2?p=scaledepth-decomposing-metric-depth)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-nyu-depth-v2)](https://paperswithcode.com/sota/monocular-depth-estimation-on-nyu-depth-v2?p=scaledepth-decomposing-metric-depth) -->
 </div>
 
 <p align="center">
