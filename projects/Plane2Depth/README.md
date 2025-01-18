@@ -105,6 +105,7 @@ bash tools/dist_train.sh projects/Plane2Depth/configs/Plane2Depth/plane2depth_sw
 python tools/test.py projects/ScaleDepth/configs/Plane2Depth/plane2depth_swin_large_NYU_480x640.py <the path of your checkpoint>
 
 ```
+The config file of KITTI and the offical weights are coming soon.
 
 <!-- ## Offical weights
 
