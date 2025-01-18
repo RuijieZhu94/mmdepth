@@ -14,35 +14,14 @@
 </p>
 
 <div align="center">
-  <!-- <b>TL;DR: Finetuning CLIP with 4 RTX 3090 in 8 hours to obtain a robust metric depth estimation model!</b> -->
   <br>
   <a href='https://arxiv.org/abs/2409.02494'><img src='https://img.shields.io/badge/Paper-arXiv-red'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<!-- <a href='https://arxiv.org/abs/[]'><img src='https://img.shields.io/badge/arXiv-[]-b31b1b.svg'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
   <a href='https://ruijiezhu94.github.io/plane2depth_page'><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <!-- <a href='https://github.com/RuijieZhu94/ScaleDepth/tree/main?tab=Apache-2.0-1-ov-file'><img src='https://img.shields.io/badge/License-Apache 2.0-blue'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-  <a href='https://ruijiezhu94.github.io/plane2depth_page'><img src="https://visitor-badge.laobi.icu/badge?page_id=ruijiezhu94.scaledepth"/></a>
+  <a href='https://ruijiezhu94.github.io/plane2depth_page'><img src="https://visitor-badge.laobi.icu/badge?page_id=ruijiezhu94.plane2depth"/></a>
   <br>
   <br>
 
-<!-- [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-diml-outdoor)](https://paperswithcode.com/sota/monocular-depth-estimation-on-diml-outdoor?p=scaledepth-decomposing-metric-depth)
-	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-diode-indoor)](https://paperswithcode.com/sota/monocular-depth-estimation-on-diode-indoor?p=scaledepth-decomposing-metric-depth)
-	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-diode-outdoor)](https://paperswithcode.com/sota/monocular-depth-estimation-on-diode-outdoor?p=scaledepth-decomposing-metric-depth)
-	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-hypersim)](https://paperswithcode.com/sota/monocular-depth-estimation-on-hypersim?p=scaledepth-decomposing-metric-depth)
-	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-ibims-1)](https://paperswithcode.com/sota/monocular-depth-estimation-on-ibims-1?p=scaledepth-decomposing-metric-depth)
-	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-virtual-kitti-2)](https://paperswithcode.com/sota/monocular-depth-estimation-on-virtual-kitti-2?p=scaledepth-decomposing-metric-depth)
-	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-ddad)](https://paperswithcode.com/sota/monocular-depth-estimation-on-ddad?p=scaledepth-decomposing-metric-depth)
-	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-sun-rgbd)](https://paperswithcode.com/sota/monocular-depth-estimation-on-sun-rgbd?p=scaledepth-decomposing-metric-depth)
-	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-kitti-eigen)](https://paperswithcode.com/sota/monocular-depth-estimation-on-kitti-eigen?p=scaledepth-decomposing-metric-depth)
-	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-nyu-depth-v2)](https://paperswithcode.com/sota/monocular-depth-estimation-on-nyu-depth-v2?p=scaledepth-decomposing-metric-depth) -->
+
 </div>
 
 <p align="center">
@@ -127,6 +106,6 @@ If you like our work and use the codebase or models for your research, please ci
 }
 ```
 ## Acknowledgement
-We thank Jiacheng Deng and Wenfei Yang for their thoughtful and valuable suggestions.
+We thank Jianfeng He for his thoughtful and valuable suggestions.
 We thank the authors of [Binsformer](https://github.com/zhyever/Monocular-Depth-Estimation-Toolbox) for their code.
 

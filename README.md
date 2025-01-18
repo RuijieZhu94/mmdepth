@@ -260,7 +260,7 @@ If you find this project useful in your research, please consider cite:
 ```bibtex
 @misc{mmdepth2024,
     title={{mmdepth}: Monocular Depth Estimation Toolbox and Benchmark},
-    author={mmdepth contributor},
+    author={mmdepth contributors},
     howpublished = {\url{https://github.com/RuijieZhu94/mmdepth}},
     year={2024}
 }
