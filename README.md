@@ -49,6 +49,35 @@ Please refer to [train.md](docs/train.md) for model training and [inference.md](
 
 For detailed guides for development, please see [tutorials](https://github.com/open-mmlab/mmsegmentation?tab=readme-ov-file#tutorial) from MMSegmentation.
 
+```
+mmdepth
+├── assets
+├── configs
+│   └── _base_
+├── data
+│   ├── ddad
+│   ├── diml
+│   ├── ...
+├── docs
+├── LICENSE
+├── mmdepth
+│   ├── apis
+│   ├── datasets
+│   ├── engine
+│   ├── ...
+├── mmdepth.egg-info
+├── model-index.yml
+├── projects
+│   ├── Binsformer
+│   ├── Plane2Depth
+│   └── ScaleDepth
+├── README.md
+├── ...
+├── tests
+├── tools
+└── work_dirs
+```
+
 ## Projects
 
 Here are some implementations of SOTA models and solutions built on MMDepth, which are supported and maintained by community users. These projects demonstrate the best practices based on MMDepth for research and product development. We welcome and appreciate all the contributions to these projects.
@@ -56,6 +85,7 @@ Also, we appreciate all contributions to improve MMDepth framework.
 
 
 <table style="border-collapse: collapse; border: none;">
+
   <tr style="border: none;">
     <td style="align-items:center; width: 25%; border: none;">
       <img src="assets/scaledepth.jpg" style=" vertical-align:middle"/>
@@ -67,6 +97,21 @@ Also, we appreciate all contributions to improve MMDepth framework.
       <br> 
       <a href="https://arxiv.org/abs/2407.08187">[Paper]</a>
       <a href="https://ruijiezhu94.github.io/ScaleDepth">[Webpage]</a>
+      <a href="https://github.com/RuijieZhu94/mmdepth">[Code]</a>
+    </td>
+  </tr>
+
+  <tr style="border: none;">
+    <td style="align-items:center; width: 25%; border: none;">
+      <img src="assets/plane2depth.jpg" style=" vertical-align:middle"/>
+    </td>
+    <td style="align-items:center; border: none;">
+      <a href="https://github.com/RuijieZhu94/mmdepth/tree/main/projects/Plane2Depth">Plane2Depth: Hierarchical Adaptive Plane Guidance for Monocular Depth Estimation</a>
+      <br>Li Liu*, Ruijie Zhu*, Jiacheng Deng, Ziyang Song, Wenfei Yang, Tianzhu Zhang
+      <br> TCSVT, 2024
+      <br> 
+      <a href="https://arxiv.org/abs/2409.02494">[Paper]</a>
+      <a href="https://ruijiezhu94.github.io/plane2depth_page/">[Webpage]</a>
       <a href="https://github.com/RuijieZhu94/mmdepth">[Code]</a>
     </td>
   </tr>
@@ -181,6 +226,7 @@ Results and models are available in the [model zoo](docs/model_zoo.md).
           <li><a href="mmdepth/models/decode_heads/uper_head.py">Uper_Head</li>
           <li><a href="mmdepth/models/decode_heads/vpd_depth_head.py">VPDDepth_Head</li>
           <li><a href="projects/ScaleDepth/decode_head/scaledepth_head.py">ScaleDepth_Head</li>
+          <li><a href="projects/Plane2Depth/decode_head/plane2depth_head.py">Plane2Depth_Head</li>
           <li><a href="projects/Binsformer/decode_head/binsformer_head.py">BinsFormer_Head</li>
         </ul>
       </td>
@@ -214,7 +260,7 @@ If you find this project useful in your research, please consider cite:
 ```bibtex
 @misc{mmdepth2024,
     title={{mmdepth}: Monocular Depth Estimation Toolbox and Benchmark},
-    author={Ruijie Zhu},
+    author={mmdepth contributor},
     howpublished = {\url{https://github.com/RuijieZhu94/mmdepth}},
     year={2024}
 }
@@ -227,6 +273,15 @@ And if you find those SOTA models and solutions built on MMDepth useful, please 
   author={Zhu, Ruijie and Wang, Chuxin and Song, Ziyang and Liu, Li and Zhang, Tianzhu and Zhang, Yongdong},
   journal={arXiv preprint arXiv:2407.08187},
   year={2024}
+}
+```
+```bibtex
+@article{liu2024plane2depth,
+  title={Plane2Depth: Hierarchical Adaptive Plane Guidance for Monocular Depth Estimation},
+  author={Liu, Li and Zhu, Ruijie and Deng, Jiacheng and Song, Ziyang and Yang, Wenfei and Zhang, Tianzhu},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology},
+  year={2024},
+  publisher={IEEE}
 }
 ```
 ```bibtex
