@@ -95,22 +95,15 @@ We provide [train.md](docs/train.md) and [inference.md](docs/inference.md) for t
 
 ### Train
 ```shell
-# Plane2Depth NYU
+# NYU
 bash tools/dist_train.sh projects/Plane2Depth/configs/Plane2Depth/plane2depth_swin_large_NYU_480x640.py 4
-# # ScaleDepth-K
-# bash tools/dist_train.sh projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_KITTI_352x1120.py 4
-# # ScaleDepth-NK
-# bash tools/dist_train.sh projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_NYU_KITTI_352x512.py 4
 ```
 
 ### Test
 ```shell
-# Plane2Depth NYU
-python tools/test.py projects/ScaleDepth/configs/Plane2Depth/plane2depth_swin_large_NYU_480x640.py <the path of checkpoint>
-# # ScaleDepth-K
-# python tools/test.py projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_KITTI_352x1120.py work_dirs/scaledepth_clip_NYU_KITTI_352x512/iter_40000.pth
-# # ScaleDepth-NK
-# python tools/test.py projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_NYU_KITTI_352x512.py work_dirs/scaledepth_clip_NYU_KITTI_352x512/iter_40000.pth
+# NYU
+python tools/test.py projects/ScaleDepth/configs/Plane2Depth/plane2depth_swin_large_NYU_480x640.py <the path of your checkpoint>
+
 ```
 
 <!-- ## Offical weights
