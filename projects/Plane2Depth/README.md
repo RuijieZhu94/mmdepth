@@ -16,12 +16,11 @@
 <div align="center">
   <!-- <b>TL;DR: Finetuning CLIP with 4 RTX 3090 in 8 hours to obtain a robust metric depth estimation model!</b> -->
   <br>
-  <br>
   <a href='https://arxiv.org/abs/2409.02494'><img src='https://img.shields.io/badge/Paper-arXiv-red'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <!-- <a href='https://arxiv.org/abs/[]'><img src='https://img.shields.io/badge/arXiv-[]-b31b1b.svg'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
   <a href='https://ruijiezhu94.github.io/plane2depth_page'><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <!-- <a href='https://github.com/RuijieZhu94/ScaleDepth/tree/main?tab=Apache-2.0-1-ov-file'><img src='https://img.shields.io/badge/License-Apache 2.0-blue'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-  <a href='https://ruijiezhu94.github.io/plane2depth_page'><img src="https://visitor-badge.laobi.icu/badge?page_id=ruijiezhu94.plane2depth_page"/></a>
+  <a href='https://ruijiezhu94.github.io/plane2depth_page'><img src="https://visitor-badge.laobi.icu/badge?page_id=ruijiezhu94.scaledepth"/></a>
   <br>
   <br>
 
@@ -47,22 +46,31 @@
 </div>
 
 <p align="center">
-<img src="../../assets/scaledepth_teaser.jpg" width="97%"/>
+<img src="../../assets/plane2depth_teaser.jpg" width="97%"/>
 </p>
 
-> Within a unified framework, our method ScaleDepth achieves both accurate indoor and outdoor metric depth estimation without setting depth ranges or finetuning models. Left: the input RGB image and corresponding depth prediction. Right: the comparison of model parameters and performance. With overall fewer parameters, our model ScaleDepth-NK significantly outperforms the state-of-the-art methods under same experimental settings.
+> We present an example of “visual deception” in (a). 
+  The significant color discrepancies mislead the network into predicting an incorrect depth map. 
+  Our method successfully mitigates this issue by using plane information. 
+  In (b), pixels within the yellow bounding box correspond to different depths but share the same surface normal (indicated by
+  identical colors representing the corresponding values). 
+  Since the generation of ground truth for surface normal depends on conventional algorithms, there exists a slight offset.
 
 <p align="center">
-<img src="../../assets/scaledepth_zeroshot.jpg" width="97%"/>
+<img src="../../assets/plane2depth_nyu.jpg" width="97%"/>
 </p>
 
-> Without any finetuning, our model can generalize to scenes with different scales and accurately estimate depth from indoors to outdoors.
+> Our approach improves the depth prediction in areas with repetitive patterns (rows 1-3) and weak textures (rows 4-6). The network
+is able to distinguish the pixels belonging to the same plane even with different colors, resulting in more accurate and consistent depth predictions.
 
 <p align="center">
-<img src="../../assets/scaledepth.jpg" width="97%"/>
+<img src="../../assets/plane2depth.jpg" width="97%"/>
 </p>
 
-> The overall architecture of the proposed ScaleDepth. We design bin queries to predict relative depth distribution and scale queries to predict scene scale. During training, we preset text prompts containing 28 scene categories as input to the frozen CLIP text encoder. We then calculate the similarity between the updated scale queries and text embedding, and utilize the scene category as its auxiliary supervision. During inference, only a single image is required to obtain the relative depth and scene scale, thereby synthesizing a metric depth map.
+> The overall architecture of Plane2Depth. 
+We use a set of plane queries to predict plane coefficients through E-MLP, N-MLP, and T-MLP, respectively. 
+Then the predicted plane coefficients are converted to metric depth maps through the pinhole camera model.
+For consistent query prediction, we adopt the APQA module to aggregate multi-scale image features and adaptively modulate them via AF modulators.
 
 
 
@@ -79,7 +87,7 @@ pip install future tensorboard
 pip install -r requirements/albu.txt
 ```
 
-And download the checkpoint of text embeddings from [Google Drive](https://drive.google.com/file/d/1Am2YWjtbWgMP4mwLjS5gmjKmawhrPyBe/view?usp=sharing) and place it to `projects/ScaleDepth/pretrained_weights` folder.
+<!-- And download the checkpoint of text embeddings from [Google Drive](https://drive.google.com/file/d/1Am2YWjtbWgMP4mwLjS5gmjKmawhrPyBe/view?usp=sharing) and place it to `projects/ScaleDepth/pretrained_weights` folder. -->
 
 ## Training and Inference
 
@@ -87,43 +95,44 @@ We provide [train.md](docs/train.md) and [inference.md](docs/inference.md) for t
 
 ### Train
 ```shell
-# ScaleDepth-N
-bash tools/dist_train.sh projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_NYU_480x480.py 4
-# ScaleDepth-K
-bash tools/dist_train.sh projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_KITTI_352x1120.py 4
-# ScaleDepth-NK
-bash tools/dist_train.sh projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_NYU_KITTI_352x512.py 4
+# Plane2Depth NYU
+bash tools/dist_train.sh projects/Plane2Depth/configs/Plane2Depth/plane2depth_swin_large_NYU_480x640.py 4
+# # ScaleDepth-K
+# bash tools/dist_train.sh projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_KITTI_352x1120.py 4
+# # ScaleDepth-NK
+# bash tools/dist_train.sh projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_NYU_KITTI_352x512.py 4
 ```
 
 ### Test
 ```shell
-# ScaleDepth-N
-python tools/test.py projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_NYU_480x480.py work_dirs/scaledepth_clip_NYU_KITTI_352x512/iter_40000.pth
-# ScaleDepth-K
-python tools/test.py projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_KITTI_352x1120.py work_dirs/scaledepth_clip_NYU_KITTI_352x512/iter_40000.pth
-# ScaleDepth-NK
-python tools/test.py projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_NYU_KITTI_352x512.py work_dirs/scaledepth_clip_NYU_KITTI_352x512/iter_40000.pth
+# Plane2Depth NYU
+python tools/test.py projects/ScaleDepth/configs/Plane2Depth/plane2depth_swin_large_NYU_480x640.py <the path of checkpoint>
+# # ScaleDepth-K
+# python tools/test.py projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_KITTI_352x1120.py work_dirs/scaledepth_clip_NYU_KITTI_352x512/iter_40000.pth
+# # ScaleDepth-NK
+# python tools/test.py projects/ScaleDepth/configs/ScaleDepth/scaledepth_clip_NYU_KITTI_352x512.py work_dirs/scaledepth_clip_NYU_KITTI_352x512/iter_40000.pth
 ```
 
-## Offical weights
+<!-- ## Offical weights
 
 | Method | Backbone | Train Iters | Results  | Config | Checkpoint | GPUs |
 | ------ | :------: | :---------: | :----------: | :----: | :--------: | :---:|
-| ScaleDepth-NK | CLIP(ConvNext-Large)   |  40000   |  [log](log/ScaleDepth-NK.md) |  [config](configs/ScaleDepth/scaledepth_clip_NYU_KITTI_352x512.py) | [iter_40000.pth](https://drive.google.com/file/d/1QYS6A5--swzxfwMqjvk9ekF0Ds0GefM1/view?usp=drive_link) | 4 RTX 3090 |
+| ScaleDepth-NK | CLIP(ConvNext-Large)   |  40000   |  [log](log/ScaleDepth-NK.md) |  [config](configs/ScaleDepth/scaledepth_clip_NYU_KITTI_352x512.py) | [iter_40000.pth](https://drive.google.com/file/d/1QYS6A5--swzxfwMqjvk9ekF0Ds0GefM1/view?usp=drive_link) | 4 RTX 3090 | -->
 
 ## Bibtex
 
 If you like our work and use the codebase or models for your research, please cite our work as follows.
 
 ```
-@ARTICLE{zhu2024scale,
-  title={ScaleDepth: Decomposing Metric Depth Estimation into Scale Prediction and Relative Depth Estimation}, 
-  author={Zhu, Ruijie and Wang, Chuxin and Song, Ziyang and Liu, Li and Zhang, Tianzhu and Zhang, Yongdong},
-  journal={arXiv preprint arXiv:2407.08187},
-  year={2024}
+@article{liu2024plane2depth,
+  title={Plane2Depth: Hierarchical Adaptive Plane Guidance for Monocular Depth Estimation},
+  author={Liu, Li and Zhu, Ruijie and Deng, Jiacheng and Song, Ziyang and Yang, Wenfei and Zhang, Tianzhu},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology},
+  year={2024},
+  publisher={IEEE}
 }
 ```
 ## Acknowledgement
-We thank Jianfeng He and Jiacheng Deng for their thoughtful and valuable suggestions.
-We thank the authors of [Binsformer](https://github.com/zhyever/Monocular-Depth-Estimation-Toolbox) and [Zoedepth](https://github.com/isl-org/ZoeDepth) for their code.
+We thank Jiacheng Deng and Wenfei Yang for their thoughtful and valuable suggestions.
+We thank the authors of [Binsformer](https://github.com/zhyever/Monocular-Depth-Estimation-Toolbox) for their code.
 
