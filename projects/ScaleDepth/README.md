@@ -24,26 +24,6 @@
   <a href='https://ruijiezhu94.github.io/ScaleDepth'><img src="https://visitor-badge.laobi.icu/badge?page_id=ruijiezhu94.scaledepth"/></a>
   <br>
   <br>
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-diml-outdoor)](https://paperswithcode.com/sota/monocular-depth-estimation-on-diml-outdoor?p=scaledepth-decomposing-metric-depth)
-	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-diode-indoor)](https://paperswithcode.com/sota/monocular-depth-estimation-on-diode-indoor?p=scaledepth-decomposing-metric-depth)
-	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-diode-outdoor)](https://paperswithcode.com/sota/monocular-depth-estimation-on-diode-outdoor?p=scaledepth-decomposing-metric-depth)
-	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-hypersim)](https://paperswithcode.com/sota/monocular-depth-estimation-on-hypersim?p=scaledepth-decomposing-metric-depth)
-	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-ibims-1)](https://paperswithcode.com/sota/monocular-depth-estimation-on-ibims-1?p=scaledepth-decomposing-metric-depth)
-	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-virtual-kitti-2)](https://paperswithcode.com/sota/monocular-depth-estimation-on-virtual-kitti-2?p=scaledepth-decomposing-metric-depth)
-	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-ddad)](https://paperswithcode.com/sota/monocular-depth-estimation-on-ddad?p=scaledepth-decomposing-metric-depth)
-	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-sun-rgbd)](https://paperswithcode.com/sota/monocular-depth-estimation-on-sun-rgbd?p=scaledepth-decomposing-metric-depth)
-	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-kitti-eigen)](https://paperswithcode.com/sota/monocular-depth-estimation-on-kitti-eigen?p=scaledepth-decomposing-metric-depth)
-	
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scaledepth-decomposing-metric-depth/monocular-depth-estimation-on-nyu-depth-v2)](https://paperswithcode.com/sota/monocular-depth-estimation-on-nyu-depth-v2?p=scaledepth-decomposing-metric-depth)
 </div>
 
 <p align="center">
