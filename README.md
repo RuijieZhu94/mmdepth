@@ -97,7 +97,7 @@ Also, we appreciate all contributions to improve MMDepth framework.
       <br> 
       <a href="https://arxiv.org/abs/2407.08187">[Paper]</a>
       <a href="https://ruijiezhu94.github.io/ScaleDepth">[Webpage]</a>
-      <a href="https://github.com/RuijieZhu94/mmdepth">[Code]</a>
+      <a href="https://github.com/RuijieZhu94/mmdepth/tree/main/projects/ScaleDepth">[Code]</a>
     </td>
   </tr>
 
@@ -112,7 +112,7 @@ Also, we appreciate all contributions to improve MMDepth framework.
       <br> 
       <a href="https://arxiv.org/abs/2409.02494">[Paper]</a>
       <a href="https://ruijiezhu94.github.io/plane2depth_page/">[Webpage]</a>
-      <a href="https://github.com/RuijieZhu94/mmdepth">[Code]</a>
+      <a href="https://github.com/RuijieZhu94/mmdepth/tree/main/projects/Plane2Depth">[Code]</a>
     </td>
   </tr>
 
